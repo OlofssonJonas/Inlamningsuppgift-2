@@ -49,13 +49,13 @@ let objPeople = [
 
 //Varför funkar det inte?
 
-function init() {
+/*function init() {
     if(localStorage.getItem ("objPeople", "user.value")){
 
         correct();
     }
 }
-init();
+init();*/
 
 //HERE IS THE FUNCTION ON THE INLOG SIDE
 
