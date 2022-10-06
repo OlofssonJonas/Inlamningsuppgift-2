@@ -1,6 +1,4 @@
 console.log("hej");
-//alert ("Hello world")
-
 
 //HERE IS ALL THE VARIABLES
 
@@ -15,7 +13,6 @@ let user = document.getElementById("name");
 let pass = document.getElementById("psw");
 
 
-
 signin.addEventListener("click", correct) 
 signout.addEventListener("click", goout)
 
@@ -24,8 +21,7 @@ signout.addEventListener("click", goout)
 
 signout.style.display ="none"
 
-//ARRRAY
-
+//MYARRAY
 
 let objPeople = [
     {
@@ -47,23 +43,17 @@ let objPeople = [
 
 //HÄR ÄR ANVÄNDAREN FORTFARANDE INLOGGAD NÄR JAG REFRESHAR SIDAN
 
-//Varför funkar det inte?
 
 function init(){
     if(localStorage.getItem("userName")){
 
         success()
     }
-    
-
 }
 init()
 
-    //const userName = JSON.parse(localStorage.getItem("userName"))
 
-//HERE IS THE FUNCTION ON THE INLOG SIDE
-
-// Ta bort ?? localstorage.setItem ("isLoggedIn", JSON.stringify(true))
+//HERE IS THE FOR OF LOOP AND LS
 
 
 function correct() {
@@ -80,16 +70,19 @@ function correct() {
     
 }
 
+
+      //HER IS THE FUNCTION FOR SUCCESSFUL LOGIN
+
+
 function success(){
     let userkey = localStorage.getItem("userName")
     heading.innerText = "Välkommen" + " " + userkey + "!";
     foot.innerText = "";
     login.style.display = "none";
     signout.style.display = "block";
-    //let getuserName = JSON.parse(localStorage.getItem("userName"));
     
 }
-//HERE IS THE FUNCTION ON THE LOG-OUT BUTTON
+      //HERE IS THE FUNCTION OF THE LOG-OUT BUTTON
 
 function goout(){
     user.value = "";
@@ -104,45 +97,4 @@ function goout(){
     
 }
 
-//HÄR SPARAR JAG UPPGIFTERNA I LOCALSTORAGE
 
-//localStorage.setItem("objPeople", JSON.stringify(objPeople));
-//let getobjPeople = JSON.parse(localStorage.getItem("objPeople"));
-
-
-//console.log(user3)
-
-//btoa ("Hello World")
-//console.log(btoa)
-
-/*
-//SOM FÖRSTA GREJ, HÄMTA FRÅN LS OCH KOLLA OM MAN ÄR INLOGGAD
-
-function init(){
-    if(localstorage.getItem("isLoggedIn"))
-    succcess()
-
-    init()
-    const isLoggedIn = JSON.parse(localstorage)
-}
-
-//VID LYCKAD INLOGGNIN SPARA TILL LS
-
-function login() {
-    localstora.setItem ("isLoggedIn", JSON.stringify(true))
-    success()
-
-    function success() {
-        console.log("success")
-    }
-}
-}
-
-//VID UTLOGGNINg TAR VI BORT INFON FRÅN LS
-
-function logout(){
-    localstorage.removeItem("isLoggedIn")
-
-
-
-*/
