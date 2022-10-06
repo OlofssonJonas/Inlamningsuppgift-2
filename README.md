@@ -9,4 +9,4 @@ Namn: Viktoria,
 Lösen: Sofia
 
 Namn: fredrik,
-Lösen<: 12345
+Lösen: 12345
